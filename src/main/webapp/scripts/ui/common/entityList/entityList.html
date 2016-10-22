@@ -1,0 +1,40 @@
+<div class="panel-main">
+    <div class="page-header">
+        <div class="pull-left">
+            <h1>{{title}}
+                <small>BusReader</small>
+            </h1>
+        </div>
+        <div class="pull-right">
+            <h1 class="text-right">
+                <smart-table-buttons show-filters="showFilterView"
+                                     show-visibility="showVisibilityView"
+                                     apply-filters="applyFilters"
+                                     clear-filters="clearFilters"
+                                     toggle-filters="toggleFilters"
+                                     toggle-visibility="toggleVisibility"></smart-table-buttons>
+            </h1>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="row panel-body">
+
+        <smart-table name="transactionList"
+                     page="page"
+                     count="count"
+                     sorting="defaultSorting"
+                     columns="columns"
+                     factory="listFactory"
+                     default-url="defaultUrl"
+                     show-visibility="showVisibilityView"
+                     toggle-visibility="toggleVisibility"
+                     show-filters="showFilterView"
+                     apply-filters="applyFilters"
+                     clear-filters="clearFilters"
+                     toggle-filters="toggleFilters"
+                     empty-table-string="emptyString"></smart-table>
+
+    </div>
+
+</div>

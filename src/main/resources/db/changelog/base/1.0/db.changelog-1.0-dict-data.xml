@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1.0-init-dict-data" author="bus">
+
+        <insert tableName="dct_user_status">
+            <column name="code">CRT</column>
+            <column name="description">Creatable</column>
+        </insert>
+        <insert tableName="dct_user_status">
+            <column name="code">ACT</column>
+            <column name="description">Active</column>
+        </insert>
+        <insert tableName="dct_user_status">
+            <column name="code">DSB</column>
+            <column name="description">Disabled</column>
+        </insert>
+        <insert tableName="dct_user_status">
+            <column name="code">BLK</column>
+            <column name="description">Blocked</column>
+        </insert>
+        <insert tableName="dct_user_status">
+            <column name="code">HNG</column>
+            <column name="description">Hanged</column>
+        </insert>
+        <insert tableName="dct_user_status">
+            <column name="code">TMP</column>
+            <column name="description">Temporary</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

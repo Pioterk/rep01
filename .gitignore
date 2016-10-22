@@ -1,0 +1,15 @@
+target/
+bower_components/
+node_modules/
+node/
+vagrant-db/.vagrant/
+.idea/
+log/
+*.iml
+*.ipr
+*.ids
+*.iws
+*.exe
+.classpath
+.project
+.settings

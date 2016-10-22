@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  display-name: 'busReader'
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: @bus.db.url@
+    username: @bus.db.user@
+    password: @bus.db.password@
+    test-on-borrow: true
+    validation-query: SELECT 1
+    validation-interval: 5000
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+
+    
+multipart:
+  max-file-size: 50Mb
+  max-request-size: 50Mb
+
+quartz:
+  enabled: false
+
+liquibase:
+  change-log: classpath:/db/changelog/db.changelog-master.xml
+  enabled: true
+  contexts: @bus.db.contexts@
