@@ -187,7 +187,7 @@
             </activation>
             <properties>
                 <bus.db.url>
-                    jdbc:mysql://localhost:3306/dev_bus?useUnicode=true&amp;characterEncoding=utf8
+                    jdbc:mysql://localhost:33070/dev_bus?useUnicode=true&amp;characterEncoding=utf8
                 </bus.db.url>
                 <bus.db.user>db_user</bus.db.user>
                 <bus.db.password>password</bus.db.password>
