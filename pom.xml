@@ -321,7 +321,7 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <changeLogFile>src/main/db/changelog/db.changelog-master.xml</changeLogFile>
+                    <changeLogFile>src/main/resources/db/changelog/db.changelog-master.xml</changeLogFile>
                     <driver>com.mysql.jdbc.Driver</driver>
                     <url>${bus.db.url}</url>
                     <username>${bus.db.user}</username>
