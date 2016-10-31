@@ -7,11 +7,7 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-tables.xml"/>
-    <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-constraints.xml"/>
     <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-dict-data.xml"/>
-    <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-views.xml"/>
-    <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-procedures.xml"/>
-    <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-triggers.xml"/>
     <include file="src/main/resources/db/changelog/base/1.0/db.changelog-1.0-test-data.xml"/>
 
 </databaseChangeLog>
